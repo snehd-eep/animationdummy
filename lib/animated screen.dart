@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'bottle.dart';
 
 
 class Login extends StatefulWidget {
@@ -136,6 +137,8 @@ class _LoginState extends State<Login> {
                       padding: EdgeInsets.symmetric(vertical: 20,horizontal: 40),
                       color: Colors.black,
                       onPressed: (){
+                         Navigator.of(context).push(MaterialPageRoute(builder:(context)=> BottleScreen()
+                         ));
 
                       },
                       child: Text(
